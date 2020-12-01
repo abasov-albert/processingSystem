@@ -10,10 +10,21 @@ namespace Lab2
             Process process = new Process(DateTime.UtcNow.Millisecond, 1, 11001);
             Console.WriteLine(process.ToString());
             Console.WriteLine();
-            var processCharacteristics = process.toArray();
-            foreach (var i in processCharacteristics)
+            foreach (var i in process.toArray())
             {
                 Console.WriteLine(i);
+            }
+
+            Console.WriteLine();
+            
+            Settings settings = new Settings();
+            settings.Intensity = 12.7;
+            settings.RAMSize = 32;
+            settings.MaxValueOfAddrSpace = 11;
+            
+            foreach (var i in settings.toArray())
+            {
+                Console.WriteLine(i);    
             }
         }
     }

@@ -6,7 +6,7 @@ namespace Lab2.Classes
     {
         Resource Session(Resource device, FIFOQueue<Process, IQueueable<Process>> deviceQueue)
         {
-            if (deviceQueue != null)
+            if (deviceQueue != null && !deviceQueue.Empty())
             {
                 device.ActiveProcess = deviceQueue.Item();
             }
