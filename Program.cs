@@ -26,6 +26,8 @@ namespace Lab2
             {
                 Console.WriteLine(i);    
             }
+            
+            // Izi Kura 
         }
     }
 }
